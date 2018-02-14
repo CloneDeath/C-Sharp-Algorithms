@@ -18,7 +18,7 @@ namespace UnitTest.AlgorithmsTests
                 var catalanNumber = CatalanNumbers.GetNumberByBinomialCoefficients(i);
                 list2.Add(catalanNumber);
 
-                Assert.True(list[(int)i] == list2[(int)i], "Wrong calculation.");
+                Assert.Equal(list[(int)i], list2[(int)i]);
             }
         }
     }

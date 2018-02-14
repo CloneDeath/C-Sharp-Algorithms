@@ -88,7 +88,7 @@ namespace UnitTest.DataStructuresTests
 
             // output: (s) (a) (x) (z) (d) (c) (f) (v)
             // output: (s) (a) (x) (z) (d) (c) (f) (v)
-            Assert.True(bfsWalk.SequenceEqual(new[] { "s", "a", "x", "z", "d", "c", "f", "v" }));
+            Assert.Equal(new[] { "s", "a", "x", "z", "d", "c", "f", "v" }, bfsWalk);
 
             // DFS from A
             // Walk the graph using DFS from A:

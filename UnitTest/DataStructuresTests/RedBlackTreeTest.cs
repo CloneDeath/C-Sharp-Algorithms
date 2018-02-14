@@ -144,7 +144,7 @@ namespace UnitTest.DataStructuresTests
                 for (int j = 0; j < levels[i].Count; ++j)
                 {
                     // TODO: [2,1] == red?
-                    Assert.True(levels[i][j].Color == color);
+                    Assert.Equal(color, levels[i][j].Color);
                 }
                 color = (color == RedBlackTreeColors.Black ? RedBlackTreeColors.Red : RedBlackTreeColors.Black);
             }

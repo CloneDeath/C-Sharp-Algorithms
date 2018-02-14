@@ -251,7 +251,7 @@ namespace UnitTest.DataStructuresTests
         {
             var avlRoot = avlTree.Root;
             Assert.True(avlRoot.Height == 2, "Wrong root height!");
-            Assert.True(avlRoot.Value == 6, "Wrong root.");
+            Assert.Equal(6, avlRoot.Value);
             Assert.True(avlRoot.LeftChild.Value == 2, "Wrong left child from root.");
             Assert.True(avlRoot.RightChild.Value == 7, "Wrong right child from root.");
             Assert.True(avlRoot.LeftChild.LeftChild.Value == 1, "Wrong value at {root->left->left}.");
